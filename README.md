@@ -1,6 +1,27 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+## Topcis in rubric
+
+### 1. Your code should compile.
+Yes, it compiles.
+
+### 2. The PID procedure follows what was taught in the lessons.
+
+
+### 3. Describe the effect each of the P, I, D components had in your implementation.
+
+
+### 4. Describe how the final hyperparameters were chosen.
+
+
+### 5. The vehicle must successfully drive a lap around the track.
+
+
+### 6. Side notes
+
+
+
 ---
 
 ## Dependencies
