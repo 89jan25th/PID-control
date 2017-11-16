@@ -10,7 +10,7 @@ Yes, it compiles.
 It follows the procedure from the lessons.
 
 ### 3. Describe the effect each of the P, I, D components had in your implementation.
-Before describing P, I, D, CTE should be mentioned. CTE(cross track error) is a distance between a car and its track, and it is used as an error for P, I, D controller.
+Before describing P, I, D, CTE should be mentioned. CTE(cross track error) is a distance between a car and its supposed track, and it is used as an error for P, I, D controller.
 
 P: P stands for proportional, so P controller controls CTE. Therefore with P controller, a vehicle drives as it has lower CTE. However, only with this method, the car faces oscillation, in other words it never converges into the track and overshoots.
 
@@ -30,6 +30,7 @@ I did not implement either twiddle or SGD. Implementing these methods will be hu
 
 
 ---
+### Udacity original content
 
 ## Dependencies
 
