@@ -7,18 +7,25 @@ Self-Driving Car Engineer Nanodegree Program
 Yes, it compiles.
 
 ### 2. The PID procedure follows what was taught in the lessons.
-
+It follows the procedure from the lessons.
 
 ### 3. Describe the effect each of the P, I, D components had in your implementation.
+Before describing P, I, D, CTE should be mentioned. CTE(cross track error) is a distance between a car and its track, and it is used as an error for P, I, D controller.
 
+P: P stands for proportional, so P controller controls CTE. Therefore with P controller, a vehicle drives as it has lower CTE. However, only with this method, the car faces oscillation, in other words it never converges into the track and overshoots.
+
+I: I stands for integral, so I controller controls integration of CTE, or the area the trajectory and the track make. With this method, you can undercut the effect of alignment bias.
+
+D: D stands for derivative, so D controller controls derivate of CTE. You can reduce oscilliation which is produced when you only have P controller.
 
 ### 4. Describe how the final hyperparameters were chosen.
-
+My hyperparameters are set to 0.2, 0.004, 3.0, respectively P, I, and, D. The starting point was from Udacity course's example, but it worked very well on this project, too. I tuned the parameters in a very small difference and it didn't seem to improve the performence so I settled with these.
 
 ### 5. The vehicle must successfully drive a lap around the track.
-
+Yes, it successfully drives a lap.
 
 ### 6. Side notes
+I did not implement either twiddle or SGD. Implementing these methods will be huge benefit if the project has more variables or you don't have a starting point.
 
 
 
